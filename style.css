@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "TitlingGothic";
+    src: url(TitlingGothicFBNor-Reg-AF65ddb13687017.otf)
+      format("opentype");
+  }
+  @font-face {
+    font-family: "TitlingGothic_Wide";
+    src: url(TitlingGothicFBWide-Bold-AF65ddb136479f5\ \(1\).otf)
+      format("opentype");
+  }
+  @font-face {
+    font-family: "TitlingGothic_Bold";
+    src: url(TitlingGothicFBWide-Black-AF65ddb1364d268.otf)
+        format("opentype")}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    height:  100vh;
+    background-color: #E9E3E3;
+    font-family:TitlingGothic,TitlingGothic_Wide ;
+    overflow: hidden;
+}
+.section{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    /* width: 1200px;
+    height: 20px; */
+    color: #1e1e1e;
+    animation: nav 500ms linear 4.5s forwards;
+    opacity: 0;
+
+
+}
+@keyframes nav{
+    0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+    
+
+.leftnav{
+    font-size: 7px;
+    flex: 1;
+    letter-spacing: 0.4em;
+    /* width: 428px;
+    height: 20px; */
+
+}
+
+.forcollaboration{
+
+    display: inline-block;
+    rotate: 0deg;
+    cursor: pointer;
+    font-family: TitlingGothic;
+}
+
+
+.logo{
+    flex: 1;
+    color: #ff3636;
+    font-size: 9px;
+    text-align: center;
+    letter-spacing: 0.2em;
+   
+}
+.menuicon{
+    margin-right: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+.rightnav{
+    flex: 1;
+    font-size: 9px;
+    text-align: right;
+    letter-spacing: 0.2em;
+}
+.menu{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+
+.paragraph{
+    color: #1e1e1e81;
+    max-width: 450px;
+    opacity: 0;
+    margin-top: -10px;
+   margin-left: 45px;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: "TitlingGothic_Bold";
+    animation: paragraph 900ms linear 1s  forwards;
+   
+    
+}
+
+@keyframes paragraph{
+
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+
+    }
+    to{
+        transform: translateX(0px);
+        opacity:1 ;
+
+    }
+}
+.images{
+    position: absolute;
+    top: 84px;
+    margin-right: 16px;
+    margin-left: 713px;
+    align-self: end;
+    background-image: url(https://uploads-ssl.webflow.com/5c2e95d3f539dc3c78c6c3ea/5c300a137569f51deafb015d_image.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    z-index: 0;
+    animation: image 1s ease 2s forwards;
+   }
+
+
+   @keyframes image{
+
+    0% {
+        height: 0%;
+      }
+    
+      100% {
+        height: 100%;
+      }
+    }
+   
+
+   .brand{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 129px;
+  bottom: 83px;
+   }
+
+   .brand-letter{
+
+    color: #ff3636;
+    letter-spacing: 168px;
+    line-height: 89px;
+    font-size: 76px;
+    text-transform: uppercase;
+    margin-top:80px;
+    font-family:TitlingGothic_Bold ;
+    z-index: 1;
+    animation-name:addy;
+    animation-duration: 500ms;
+    animation-timing-function: cubic-bezier(0, 0, 0.55, 1.05);
+    animation-delay: 0ms;
+   }
+   @keyframes addy{
+    0% {
+        transform: scale(1.2);
+        filter: blur(10px);
+      }
+      100% {
+        transform: scale(1);
+        filter: blur(0);
+      }
+    }
+   
+   .play-video{
+    position: absolute;
+    color: #1a1a1a;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-left: 210px;
+    top: 255px;
+    font-family: TitlingGothic;
+    opacity: 0;
+    animation: play-video 500ms linear 2.5s forwards;
+   }
+
+   @keyframes play-video{
+
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+   
+
+    .video-icon{
+        width: 12px;
+    }
+   .play-video-text{
+    color: #ff3636;
+   }
+   .heading1{
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    left: 100px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #1e1e1e;
+    font-family:TitlingGothic_Bold ;
+    margin: 40px;
+    line-height: 32px;
+    text-transform: uppercase;
+    opacity: 0;
+    animation:heading 500ms linear 3s forwards
+
+   }
+   @keyframes heading{
+    0%{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(opx);
+        opacity: 1;
+    }
+   }
+   .paragraph-main{
+    position: relative;
+   top: 20px;
+   left: 16%;
+   max-width: 493px;
+   margin-top: -15px;
+   padding-right: 80px;
+   color: #1e1e1e;
+   font-family: TitlingGothic_Wide;
+   font-size: 11px;
+   line-height: 17px;
+   font-weight: 900;
+   text-transform: uppercase;
+   animation: boss 500ms linear 3.5s forwards;
+   opacity: 0;
+
+
+   }
+
+   @keyframes boss{
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+   }
+   .text-data{
+
+    display: inline;
+    writing-mode: vertical-lr;
+    width: 175px;
+    margin-right: -80px;
+    margin-left: -42px;
+    align-self: stretch;
+    transform: translate(100px, 0px);
+    font-family: tablet-gothic, sans-serif;
+    font-size: 7px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+   }
+
+   .last-text{
+    color: #1e1e1e;
+    width: 200px;
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-left: 215px;
+    margin-top: -10px;
+    font-family:TitlingGothic_Bold;
+    font-size: 10px;
+    line-height: 15px;
+    animation: heading 500ms linear 4s forwards ;
+    opacity: 0;
+   }
+
+   
+   
+   .last-letter2{
+    opacity: 0.5;
+   }
+
+   .last-letter3{
+    opacity: 0.25;
+   }
+
+   .Events{
+    
+    position: absolute;
+
+    right: 0px;
+   margin-top: -55px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    border-bottom: 2px solid #ff3636;
+    font-family: tablet-gothic, sans-serif;
+    color: #ff3636;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+   }
